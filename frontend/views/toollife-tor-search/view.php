@@ -6,24 +6,14 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model frontend\models\ToollifeTor */
 
-$this->title = $model->idtoollife_tor;
-$this->params['breadcrumbs'][] = ['label' => 'Toollife Tors', 'url' => ['index']];
+//$this->title = $model->idtoollife_tor;
+$this->title = 'Toollife Tolerance';
+$this->params['breadcrumbs'][] = ['label' => 'Toollife Tolerance', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="toollife-tor-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->idtoollife_tor], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->idtoollife_tor], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
 
     <?= DetailView::widget([
         'model' => $model,

@@ -5,25 +5,14 @@ use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\ToollifeSc */
-
-$this->title = $model->idtoollife_s_c;
-$this->params['breadcrumbs'][] = ['label' => 'Toollife Scs', 'url' => ['index']];
+//$this->title = $model->idtoollife_s_c;
+$this->title = 'P.C';
+$this->params['breadcrumbs'][] = ['label' => 'Toollife PC', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="toollife-sc-view">
 
     <h1><?= Html::encode($this->title) ?></h1>
-
-    <p>
-        <?= Html::a('Update', ['update', 'id' => $model->idtoollife_s_c], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->idtoollife_s_c], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
-    </p>
 
     <?= DetailView::widget([
         'model' => $model,
